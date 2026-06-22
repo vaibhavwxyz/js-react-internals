@@ -1,0 +1,15 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>DOM-based XSS: vuln + fix</title>
+<!--
+  Demonstrate a DOM-based XSS sink and the fix.
+  TODO:
+    - vuln: write untrusted input via innerHTML / location.hash
+    - fix: use textContent / sanitize / encode
+    - note: never trust user input in HTML sinks
+-->
+<input id="name" placeholder="your name" />
+<div id="out"></div>
+<script>
+  // TODO: show the unsafe innerHTML version, then the safe textContent version
+</script>

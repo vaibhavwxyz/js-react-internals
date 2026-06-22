@@ -1,0 +1,10 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Service Worker Demo</title>
+<!-- Registers sw.js and exercises the cache-first strategy. -->
+<h1>Service Worker Demo</h1>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js");
+  }
+</script>

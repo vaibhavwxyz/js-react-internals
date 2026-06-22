@@ -1,0 +1,16 @@
+<!doctype html>
+<meta charset="utf-8" />
+<title>Layout Thrash Demo</title>
+<!--
+  Demonstrate forced synchronous layout ("layout thrashing").
+  TODO:
+    - bad: loop that reads offsetHeight then writes style, repeatedly
+    - good: batch all reads, then all writes (read/write phases)
+    - measure with Performance panel / performance.now()
+-->
+<button id="bad">Thrash</button>
+<button id="good">Batched</button>
+<div id="list"></div>
+<script>
+  // TODO: implement bad/good handlers
+</script>

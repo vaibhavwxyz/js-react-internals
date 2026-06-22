@@ -1,0 +1,16 @@
+{
+  "name": "js-react-internals",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal learning repo — JS, browser, React & Next.js internals.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^2.0.0",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/jest-dom": "^6.0.0",
+    "jsdom": "^25.0.0"
+  }
+}
