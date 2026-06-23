@@ -13,6 +13,9 @@ let cat = {
     isAnimal: true,
     color: 'black'
 }
+Object.prototype.hasMore = function(){
+    console.log('hasmore is calling')
+}
 let dog = Object.create(animal) // this will create new obj with exiting properites of arg obj
 console.log(dog.alive)
 Object.setPrototypeOf(cat, animal) // new way to set __proto__ : earlier we do this `cat.__proto__ = animal`
