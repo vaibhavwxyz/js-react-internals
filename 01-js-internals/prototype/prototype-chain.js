@@ -13,7 +13,7 @@ let cat = {
     isAnimal: true,
     color: 'black'
 }
-Object.prototype.hasMore = function(){
+Object.prototype.hasMore = function () {
     console.log('hasmore is calling')
 }
 let dog = Object.create(animal) // this will create new obj with exiting properites of arg obj
@@ -23,3 +23,7 @@ Object.setPrototypeOf(cat, animal) // new way to set __proto__ : earlier we do t
 console.log(animal.alive)
 console.log(cat.alive)
 
+/* 
+In JavaScript, objects have a special hidden property [[Prototype]] (as named in the specification), 
+that is either null or references another object. That object is called “a prototype”: 
+*/
