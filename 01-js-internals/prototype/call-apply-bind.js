@@ -48,3 +48,16 @@ const bind = greet.bind(person1)
 console.log('call', call)
 console.log('apply', apply)
 console.log(bind('Hi', '?'))
+
+/*this is short version
+function greet() {
+  console.log(this.name)
+}
+
+const arjun = { name: 'Arjun' }
+const priya  = { name: 'Priya' }
+
+greet.call(arjun)    
+greet.apply(priya)  
+const later = greet.bind(priya)
+*/
