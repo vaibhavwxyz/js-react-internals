@@ -4,8 +4,10 @@ function getData(){
 }
 
 const doSomeMagic = function(fn, d){
+    let timer;
     return function(){
-        setTimeout(() => fn(), d)
+        clearTimeout(timer)
+        timer = setTimeout(() => fn(), d)
     }
 }
 
