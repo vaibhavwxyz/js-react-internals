@@ -17,3 +17,14 @@ function throttle(fn, limit) {
     }
   };
 }
+
+function logScroll() {
+  console.log("fired at", Date.now());
+}
+
+const throttledScroll = throttle(logScroll, 300);
+
+// call it multiple times so you can step through
+throttledScroll();
+throttledScroll();
+throttledScroll();
