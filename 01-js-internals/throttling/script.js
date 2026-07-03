@@ -1,7 +1,10 @@
-/* 
-Throttling ensures a function runs at most once per specified time interval,
-no matter how many times it is called — ignoring all calls that happen within that interval.
-*/
+/**
+Debouncing: if you keep calling a function repeatedly, it keeps resetting the timer and only runs once you finally stop calling it.
+Throttling: no matter how many times you call a function, it runs only once per time interval — all other calls in between are ignored.
+---
+Debounce — "keep delaying until you stop"
+Throttle — "run now, take a break, run again"
+ */
 
 function throttle(fn, limit) {
   let lastCalled = 0; // timestamp of last time fn actually ran
