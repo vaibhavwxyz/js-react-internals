@@ -12,7 +12,7 @@ greet("Vaibhav", sayGoodBye);
 function fetchData() {
   const data = { name: "Alice", age: 25 };
   setTimeout(() => {
-    return data; // Simulating an API response
+    return data;
   }, 2000);
 }
 const userData = fetchData();
