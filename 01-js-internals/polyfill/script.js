@@ -7,7 +7,7 @@ console.log(at);
 ans.add(10); // add a value
 ans.delete(9); // remove a value
 console.log(ans.has(8)); // check membership -> true
-console.log(ans.size); // number of elements
+console.log(ans.size);
 console.log([...ans]); // convert back to array
 
 // --- Iterating ---
