@@ -16,7 +16,13 @@ Run:  node 01-js-internals/patterns/pattern-03-numbered-triangle.js
 */
 
 function numberedTriangle(n) {
-  // TODO: build each row, then print it.
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+      row += j;
+    }
+    console.log(row);
+  }
 }
 
 numberedTriangle(5);

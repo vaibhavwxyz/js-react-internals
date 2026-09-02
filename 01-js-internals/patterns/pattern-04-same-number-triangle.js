@@ -16,7 +16,13 @@ Run:  node 01-js-internals/patterns/pattern-04-same-number-triangle.js
 */
 
 function sameNumberTriangle(n) {
-  // TODO: build each row, then print it.
+  for (let i = 1; i <= n; i++) {
+    let row = "";
+    for (let j = 1; j <= i; j++) {
+      row += i;
+    }
+    console.log(row);
+  }
 }
 
 sameNumberTriangle(5);
