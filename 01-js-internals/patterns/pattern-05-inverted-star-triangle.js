@@ -16,7 +16,13 @@ Run:  node 01-js-internals/patterns/pattern-05-inverted-star-triangle.js
 */
 
 function invertedStarTriangle(n) {
-  // TODO: build each row, then print it.
+  for (let i = 0; i < n; i++) {
+    let row = "";
+    for (let j = n; j - i > 0; j--) {
+      row += "*";
+    }
+    console.log(row);
+  }
 }
 
 invertedStarTriangle(5);

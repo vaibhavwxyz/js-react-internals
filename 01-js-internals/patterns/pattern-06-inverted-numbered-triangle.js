@@ -16,7 +16,13 @@ Run:  node 01-js-internals/patterns/pattern-06-inverted-numbered-triangle.js
 */
 
 function invertedNumberedTriangle(n) {
-  // TODO: build each row, then print it.
+  for (let row = n; row >= 1; row--) {
+    let line = "";
+    for (let num = 1; num <= row; num++) {
+      line += num;
+    }
+    console.log(line);
+  }
 }
 
 invertedNumberedTriangle(5);
